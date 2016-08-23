@@ -1,0 +1,15 @@
+# Gitignore file
+
+# Remove backup files
+*#
+*.
+*.elc
+*~
+.#*
+
+# Emacs packages
+elpa/
+var/
+
+# Emacs server file
+server/
