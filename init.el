@@ -336,8 +336,8 @@ space does not end a sentence, so don't break a line there."
 ;; (when my-prefered-font
 ;;   (set-frame-font my-prefered-font nil t))
 
-;; (load-with-warning (expand-file-name
-;;                     (cond ((eq system-type 'windows-nt) "windows.el")
-;;                           ((eq system-type 'gnu/linux) "linux.el")
-;;                           (t "default-system.el"))
-;;                     user-emacs-directory))
+;; (load-file (expand-file-name
+;;             (cond ((eq system-type 'windows-nt) "windows.el")
+;;                   ((eq system-type 'gnu/linux) "linux.el")
+;;                   (t "global.el"))
+;;             user-emacs-directory))
