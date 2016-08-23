@@ -40,10 +40,18 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(case-fold-search t)
+ '(current-language-environment "UTF-8")
+ '(default-input-method "rfc1345")
+ '(display-time-mode t)
+ '(global-font-lock-mode t)
+ '(inhibit-startup-screen t)
+ '(mouse-wheel-mode t)
+ '(show-paren-mode t)
+ ;; '(custom-enabled-themes (quote (philsf-windows)))
  '(custom-safe-themes
    (quote
-    ("90071cf01f58867a55a71e6cfe0ea4bacb67b782566f0534c10e612af74f573b" default)))
- '(display-time-mode t)
+    ("75a696bc7160537d6071073f50422d1db6315ea303d33d622dbf5d8d413add0f" "587d5e8ac355074b51471b7ecdf05213a33f40515fd5027e4796ea6370a7efa8" "555065b4cca21d27b1c799633e0e3cc7c02be5b19d93c1fcd6818e3f1ed08944" default)))
  '(ess-R-font-lock-keywords
    (quote
     ((ess-R-fl-keyword:modifiers . t)
@@ -58,8 +66,7 @@
      (ess-fl-keyword:= . t)
      (ess-R-fl-keyword:F&T . t)
      (ess-R-fl-keyword:%op% . t))))
- '(font-use-system-font t)
- '(inhibit-startup-screen t))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
