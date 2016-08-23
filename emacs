@@ -286,7 +286,7 @@ space does not end a sentence, so don't break a line there."
 			nil t))))
 
 ;; Use markdown-mode for README.md (GitHub Flavored Markdown) (2015-09-20 - fixed 2016-01-23)
-(add-to-list 'load-path "~/.emacs.d/markdown-mode")
+;; (add-to-list 'load-path "~/.emacs.d/markdown-mode")
 (autoload 'gfm-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md$" . gfm-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
