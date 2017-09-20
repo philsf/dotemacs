@@ -12,8 +12,10 @@
  '(mouse-wheel-mode t)
  '(show-paren-mode t))
 
-(custom-theme-set-faces
- 'philsf-global
- )
+;; (custom-theme-set-faces
+;;  'philsf-global
+;;  )
+
+(add-hook 'after-init-hook (lambda () (load-theme 'zerodark)))
 
 (provide-theme 'philsf-global)
