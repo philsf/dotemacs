@@ -53,6 +53,7 @@
  '(show-paren-mode t)
  ;; '(custom-enabled-themes (quote (philsf-ubuntu)))
  ;; '(custom-enabled-themes (quote (philsf-windows)))
+ '(custom-enabled-themes (quote (philsf-global)))
  '(ess-R-font-lock-keywords
    (quote
     ((ess-R-fl-keyword:modifiers . t)
