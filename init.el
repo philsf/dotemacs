@@ -51,6 +51,7 @@
  '(inhibit-startup-screen t)
  '(mouse-wheel-mode t)
  '(show-paren-mode t)
+ ;; '(custom-enabled-themes (quote (philsf-ubuntu)))
  ;; '(custom-enabled-themes (quote (philsf-windows)))
  '(ess-R-font-lock-keywords
    (quote
