@@ -94,9 +94,9 @@
 (setq TeX-save-query nil)
 (setq TeX-PDF-mode t)
 
-;; dvc Changelog entries (2013-12-12)
-(setq user-mail-address "philsf79@gmail.com")  ;; default: user@host
-(setq change-log-default-name "Changelog")   ;; default: ChangeLog
+;; ;; dvc Changelog entries (2013-12-12)
+;; (setq user-mail-address "philsf79@gmail.com")  ;; default: user@host
+;; (setq change-log-default-name "Changelog")   ;; default: ChangeLog
 
 (require 'iso-transl)
 
