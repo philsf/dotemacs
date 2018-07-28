@@ -89,10 +89,10 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; tips from http://soundandcomplete.com/post/21038270357/emacs-as-the-ultimate-latex-editor
-(setq TeX-auto-save t) 
-(setq TeX-parse-self t) 
-(setq TeX-save-query nil)
-(setq TeX-PDF-mode t)
+;; (setq TeX-auto-save t)
+;; (setq TeX-parse-self t)
+;; (setq TeX-save-query nil)
+;; (setq TeX-PDF-mode t)
 
 ;; ;; dvc Changelog entries (2013-12-12)
 ;; (setq user-mail-address "philsf79@gmail.com")  ;; default: user@host
