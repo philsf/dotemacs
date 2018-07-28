@@ -35,12 +35,19 @@
  '(global-font-lock-mode t)
  '(inhibit-startup-screen t)
  '(mouse-wheel-mode t)
+ '(package-archive-priorities (quote (("melpa-stable" . 1) ("gnu" . 2))))
  '(package-archives
    (quote
     (("melpa-stable" . "http://stable.melpa.org/packages/")
      ("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
+ '(package-selected-packages
+   (quote
+    (zerodark-theme use-package pandoc-mode magithub magit-gitflow gitlab ess csv-mode auctex markdown-mode)))
  '(show-paren-mode t))
+(unless package-archive-contents
+  (package-refresh-contents))
+(package-install-selected-packages)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
