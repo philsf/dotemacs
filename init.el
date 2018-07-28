@@ -335,6 +335,10 @@ space does not end a sentence, so don't break a line there."
   :ensure t
   :config (magithub-feature-autoinject t))
 
+;; gitflow ( 2018-07-28)
+(require 'magit-gitflow)
+(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+
 ;; Use pandoc-mode for markdown files (2016-08-03)
 (add-hook 'markdown-mode-hook 'pandoc-mode)
 
