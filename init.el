@@ -2,45 +2,11 @@
 ;; ;(setq tex-dvi-view-command "kdvi")
 ;(setq tex-dvi-view-command "xdvi")
 
-;; setting some colors so I can see better
-
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-
-(set-background-color "#e5e5e5")
-(set-foreground-color "black")
-(set-cursor-color "dark slate blue")
-(display-time)
-
-;(scroll-bar-mode -1)
-(scroll-bar-mode 1)
-
-(set-scroll-bar-mode 'right)
-
-; retitle emacs window
- (defun frame-retitle (title)
-   (modify-frame-parameters
-     nil
-     (list
-       (cons
-          'name
-          title
-       )
-     )
-   )
- )
-
- ;; set a beautiful title bar
- (setq frame-title-format
-       '("%S: " (buffer-file-name "%f"
-                                  (dired-directory dired-directory "%b"))))
-
-(global-set-key [delete] 'delete-char)
-(global-set-key [kp-delete] 'delete-char)
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -86,7 +52,6 @@
  )
 (setq visible-bell t)
 ;(add-hook 'text-mode-hook 'turn-on-auto-fill)
-
 
 (setq compilation-window-height 8)
 (setq compilation-finish-function
