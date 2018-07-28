@@ -44,7 +44,6 @@
    (quote
     (ess zerodark-theme use-package pandoc-mode magithub magit-gitflow gitlab csv-mode auctex markdown-mode)))
  '(show-paren-mode t))
-(package-initialize)
 (unless package-archive-contents
   (package-refresh-contents))
 (package-install-selected-packages)
