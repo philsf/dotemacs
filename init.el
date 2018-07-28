@@ -98,7 +98,7 @@
 ;; (setq user-mail-address "philsf79@gmail.com")  ;; default: user@host
 ;; (setq change-log-default-name "Changelog")   ;; default: ChangeLog
 
-(require 'iso-transl)
+;; (require 'iso-transl)
 
 ;; Use 'check-parens' in markdown-mode (2015-09-20)
 (add-hook 'markdown-mode-hook
