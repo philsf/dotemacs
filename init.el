@@ -44,6 +44,10 @@
    (quote
     (ess zerodark-theme use-package pandoc-mode magithub magit-gitflow gitlab csv-mode auctex)))
  '(show-paren-mode t))
+(package-initialize)
+(unless package-archive-contents
+  (package-refresh-contents))
+(package-install-selected-packages)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
