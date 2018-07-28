@@ -35,6 +35,7 @@
  '(global-font-lock-mode t)
  '(inhibit-startup-screen t)
  '(mouse-wheel-mode t)
+ '(package-archive-priorities (quote (("melpa-stable" . 1) ("gnu" . 2))))
  '(package-archives
    (quote
     (("melpa-stable" . "http://stable.melpa.org/packages/")
