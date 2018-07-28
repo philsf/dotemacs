@@ -3,6 +3,13 @@
 ;(setq tex-dvi-view-command "xdvi")
 
 ;; setting some colors so I can see better
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (set-background-color "#e5e5e5")
 (set-foreground-color "black")
 (set-cursor-color "dark slate blue")
@@ -69,6 +76,11 @@
      (ess-R-fl-keyword:F&T . t)
      (ess-R-fl-keyword:%op% . t))))
  )
+ '(package-archives
+   (quote
+    (("melpa-stable" . "http://stable.melpa.org/packages/")
+     ("melpa" . "http://melpa.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -317,15 +329,6 @@ space does not end a sentence, so don't break a line there."
 ;; Magit status (2015-09-22)
 (global-set-key (kbd "C-x g") 'magit-status)
 
-;; MELPA packages (2016-01-22)
-(require 'package) ;; You might already have this line
-(add-to-list 'package-archives
-;             '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-             '("melpa" . "http://melpa.org/packages/"))
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(package-initialize) ;; You might already have this line
 
 ;; Use pandoc-mode for markdown files (2016-08-03)
 (add-hook 'markdown-mode-hook 'pandoc-mode)
