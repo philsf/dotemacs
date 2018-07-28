@@ -42,7 +42,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ess zerodark-theme use-package pandoc-mode magithub magit-gitflow gitlab csv-mode auctex markdown-mode)))
+    (zerodark-theme use-package pandoc-mode magithub magit-gitflow gitlab ess csv-mode auctex markdown-mode)))
  '(show-paren-mode t))
 (unless package-archive-contents
   (package-refresh-contents))
