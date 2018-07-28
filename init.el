@@ -52,6 +52,8 @@
  )
 (setq visible-bell t)
 ;(add-hook 'text-mode-hook 'turn-on-auto-fill)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
 (setq compilation-window-height 8)
 (setq compilation-finish-function
