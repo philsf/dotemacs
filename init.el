@@ -36,6 +36,20 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
+;; Use 'check-parens' in markdown-mode (2015-09-20)
+(add-hook 'markdown-mode-hook
+	  (lambda ()
+	    (when buffer-file-name
+	      (add-hook 'after-save-hook
+			'check-parens
+			nil t))))
+
+;; Use markdown-mode for README.md (GitHub Flavored Markdown) (2015-09-20 - fixed 2016-01-23)
+;; (add-to-list 'load-path "~/.emacs.d/markdown-mode")
+(autoload 'gfm-mode "markdown-mode" "Major mode for editing Markdown files" t)
+(setq auto-mode-alist (cons '("\\.md$" . gfm-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
+
 ;; Magit status (2015-09-22)
 (global-set-key (kbd "C-x g") 'magit-status)
 
