@@ -66,3 +66,7 @@
   :after magit
   :ensure t
   :config (magithub-feature-autoinject t))
+
+;; gitflow ( 2018-07-28)
+(require 'magit-gitflow)
+(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
