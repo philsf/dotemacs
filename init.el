@@ -21,7 +21,8 @@
  '(package-enable-at-startup t)
  '(package-selected-packages
    (quote
-    (use-package magit markdown-mode zerodark-theme pandoc-mode magithub gitlab magit-gitflow auctex ess))))
+    (use-package magit markdown-mode zerodark-theme pandoc-mode magithub gitlab magit-gitflow auctex ess)))
+ '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
