@@ -88,3 +88,13 @@
 (global-set-key (kbd "C-9") '(lambda()(interactive)(djcb-opacity-modify t)))
 (global-set-key (kbd "C-0") '(lambda()(interactive)
                                (modify-frame-parameters nil `((alpha . 100)))))
+
+;; (setq compilation-window-height 8)
+;; (setq compilation-finish-function
+;;       (lambda (buf str)
+;;         (if (string-match "exited abnormally" str)
+;;             ;;there were errors
+;;             (message "compilation errors, press C-x ` to visit")
+;;           ;;no errors, make the compilation window go away in 0.5 seconds
+;;           (run-at-time 0.5 nil 'delete-windows-on buf)
+;;           (message "NO COMPILATION ERRORS!"))))
