@@ -36,6 +36,11 @@
   (package-refresh-contents))
 (package-install-selected-packages)
 
+;; TeX mode
+;(add-hook 'text-mode-hook 'turn-on-auto-fill)
+(add-hook 'LaTeX-mode-hook 'flyspell-mode)
+(add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
+
 ;; Use 'check-parens' in markdown-mode (2015-09-20)
 (add-hook 'markdown-mode-hook
 	  (lambda ()
