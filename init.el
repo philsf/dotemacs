@@ -64,9 +64,10 @@
   :config (add-hook 'markdown-mode-hook 'pandoc-mode)
   )
 
-
 ;; Magit status (2015-09-22)
-(global-set-key (kbd "C-x g") 'magit-status)
+(use-package magit
+  :config (global-set-key (kbd "C-x g") 'magit-status)
+  )
 
 ;; magithub (2018-07-27)
 (use-package magithub
