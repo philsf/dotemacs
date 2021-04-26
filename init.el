@@ -43,6 +43,7 @@
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
 ;; Use 'check-parens' in markdown-mode (2015-09-20)
+;; improved 2021-04-26
 (use-package markdown-mode
   :config (add-hook 'markdown-mode-hook
 	  (lambda ()
@@ -59,12 +60,14 @@
 (setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
 
 ;; Use pandoc-mode for markdown files (2016-08-03)
+;; improved 2021-04-26
 (use-package pandoc-mode
   :ensure t
   :config (add-hook 'markdown-mode-hook 'pandoc-mode)
   )
 
 ;; Magit status (2015-09-22)
+;; improved 2021-04-26
 (use-package magit
   :config (global-set-key (kbd "C-x g") 'magit-status)
   )
@@ -76,6 +79,7 @@
   :config (magithub-feature-autoinject t))
 
 ;; gitflow ( 2018-07-28)
+;; improved 2021-04-26
 (use-package magit-gitflow
   :config (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
 
