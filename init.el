@@ -21,16 +21,16 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-enable-at-startup t)
  '(package-selected-packages
-   (quote
-    (use-package
-      magit
-      markdown-mode
-      zerodark-theme
-      pandoc-mode
-      magithub
-      gitlab
+   (quote (
       auctex
       ess
+      gitlab
+      magit
+      magithub
+      markdown-mode
+      pandoc-mode
+      use-package
+      zerodark-theme
       )
     )
    )
