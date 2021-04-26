@@ -22,7 +22,19 @@
  '(package-enable-at-startup t)
  '(package-selected-packages
    (quote
-    (use-package magit markdown-mode zerodark-theme pandoc-mode magithub gitlab magit-gitflow auctex ess)))
+    (use-package
+      magit
+      markdown-mode
+      zerodark-theme
+      pandoc-mode
+      magithub
+      gitlab
+      magit-gitflow
+      auctex
+      ess
+      )
+    )
+   )
  '(show-paren-mode t)
  '(tool-bar-style (quote image)))
 (custom-set-faces
@@ -34,7 +46,8 @@
 
 ;; auto-install selected packages
 (unless package-archive-contents
-  (package-refresh-contents))
+  (package-refresh-contents)
+  )
 (package-install-selected-packages)
 
 ;; TeX mode
