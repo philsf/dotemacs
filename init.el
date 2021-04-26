@@ -57,7 +57,11 @@
 (setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
 
 ;; Use pandoc-mode for markdown files (2016-08-03)
-(add-hook 'markdown-mode-hook 'pandoc-mode)
+(use-package pandoc-mode
+  :ensure t
+  :config (add-hook 'markdown-mode-hook 'pandoc-mode)
+  )
+
 
 ;; Magit status (2015-09-22)
 (global-set-key (kbd "C-x g") 'magit-status)
