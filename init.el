@@ -56,12 +56,15 @@
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
 ;; Use 'check-parens' in markdown-mode (2015-09-20)
-(add-hook 'markdown-mode-hook
+;; improved 2021-04-26
+(use-package markdown-mode
+  :config (add-hook 'markdown-mode-hook
 	  (lambda ()
 	    (when buffer-file-name
 	      (add-hook 'after-save-hook
 			'check-parens
 			nil t))))
+  )
 
 ;; Use markdown-mode for README.md (GitHub Flavored Markdown) (2015-09-20 - fixed 2016-01-23)
 ;; (add-to-list 'load-path "~/.emacs.d/markdown-mode")
@@ -70,10 +73,17 @@
 (setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
 
 ;; Use pandoc-mode for markdown files (2016-08-03)
-(add-hook 'markdown-mode-hook 'pandoc-mode)
+;; improved 2021-04-26
+(use-package pandoc-mode
+  :ensure t
+  :config (add-hook 'markdown-mode-hook 'pandoc-mode)
+  )
 
 ;; Magit status (2015-09-22)
-(global-set-key (kbd "C-x g") 'magit-status)
+;; improved 2021-04-26
+(use-package magit
+  :config (global-set-key (kbd "C-x g") 'magit-status)
+  )
 
 ;; magithub (2018-07-27)
 (use-package magithub
@@ -82,8 +92,11 @@
   :config (magithub-feature-autoinject t))
 
 ;; gitflow ( 2018-07-28)
-(require 'magit-gitflow)
-(add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+;; improved 2021-04-26
+(use-package magit-gitflow
+  :config (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; C-9 will make emacs frame transparent with this code
