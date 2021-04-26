@@ -6,7 +6,7 @@ Its main purpose is track changes in the `init.el` config file, and theme config
 
 ## Instructions ##
 
-1. Clone this repository into your `~/.emacs.d/`
+1. Clone this repository into your `~/.emacs.d/`;
 1. When emacs is run, selected packages are auto-installed with `use-package`;
 1. Accept permission to use the custom theme:
     - currently `zerodark-theme`;
