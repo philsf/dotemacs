@@ -43,12 +43,14 @@
 (add-hook 'LaTeX-mode-hook 'LaTeX-math-mode)
 
 ;; Use 'check-parens' in markdown-mode (2015-09-20)
-(add-hook 'markdown-mode-hook
+(use-package markdown-mode
+  :config (add-hook 'markdown-mode-hook
 	  (lambda ()
 	    (when buffer-file-name
 	      (add-hook 'after-save-hook
 			'check-parens
 			nil t))))
+  )
 
 ;; Use markdown-mode for README.md (GitHub Flavored Markdown) (2015-09-20 - fixed 2016-01-23)
 ;; (add-to-list 'load-path "~/.emacs.d/markdown-mode")
