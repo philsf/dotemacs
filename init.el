@@ -46,7 +46,8 @@
 
 ;; auto-install selected packages
 (unless package-archive-contents
-  (package-refresh-contents))
+  (package-refresh-contents)
+  )
 (package-install-selected-packages)
 
 ;; TeX mode
