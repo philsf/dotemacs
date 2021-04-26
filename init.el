@@ -29,7 +29,6 @@
       pandoc-mode
       magithub
       gitlab
-      magit-gitflow
       auctex
       ess
       )
