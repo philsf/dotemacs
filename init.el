@@ -90,12 +90,11 @@
   :ensure t
   :config (magithub-feature-autoinject t))
 
-;; gitflow ( 2018-07-28)
-;; improved 2021-04-26
-(use-package magit-gitflow
-  :config (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
-
-  )
+;; ;; gitflow ( 2018-07-28)
+;; ;; improved 2021-04-26
+;; (use-package magit-gitflow
+;;   :config (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+;;   )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; C-9 will make emacs frame transparent with this code
