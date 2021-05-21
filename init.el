@@ -69,6 +69,7 @@
 ;; (add-to-list 'load-path "~/.emacs.d/markdown-mode")
 (autoload 'gfm-mode "markdown-mode" "Major mode for editing Markdown files" t)
 (setq auto-mode-alist (cons '("\\.md$" . gfm-mode) auto-mode-alist))
+(setq auto-mode-alist (cons '("\\.Rmd$" . gfm-mode) auto-mode-alist))
 (setq auto-mode-alist (cons '("\\.markdown$" . gfm-mode) auto-mode-alist))
 
 ;; Use pandoc-mode for markdown files (2016-08-03)
