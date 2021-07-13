@@ -24,7 +24,6 @@
    (quote (
       auctex
       ess
-      gitlab
       forge
       magit
       markdown-mode
