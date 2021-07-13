@@ -20,7 +20,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/")))
  '(package-enable-at-startup t)
  '(package-selected-packages
-   (quote (
+   '(
       auctex
       ess
       forge
@@ -30,7 +30,6 @@
       use-package
       zerodark-theme
       )
-    )
    )
  '(show-paren-mode t)
  '(tool-bar-style 'image))
