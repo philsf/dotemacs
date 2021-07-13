@@ -25,8 +25,8 @@
       auctex
       ess
       gitlab
+      forge
       magit
-      magithub
       markdown-mode
       pandoc-mode
       use-package
@@ -85,11 +85,10 @@
   :config (global-set-key (kbd "C-x g") 'magit-status)
   )
 
-;; magithub (2018-07-27)
-(use-package magithub
-  :after magit
-  :ensure t
-  :config (magithub-feature-autoinject t))
+;; forge (2021-07-13)
+(use-package forge
+  :after magit)
+
 
 ;; ;; gitflow ( 2018-07-28)
 ;; ;; improved 2021-04-26
